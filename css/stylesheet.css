@@ -83,9 +83,6 @@ table {
     padding-bottom: 10px; 
 }
 
-.menu img {
-    padding-top: 20px;
-}
 
 .sectionb_1_of_2 {
     width: 79.2%;
@@ -103,7 +100,11 @@ table {
 }
 
 
-/*  SECTIONS  ============================================================================= */
+/*
+  ========================================
+  Section
+  ========================================
+*/
 
 .section {
 	clear: both;
@@ -111,8 +112,11 @@ table {
 	margin: 0px;
 }
 
-/*  GROUPING  ============================================================================= */
-
+/*
+  ========================================
+ Grouping
+  ========================================
+*/
 
 .group:before,
 .group:after {
@@ -143,4 +147,106 @@ table {
 	.main-col { 
 		margin: 1% 0 1% 0%;
 	}
+}
+
+
+/*
+  ========================================
+  Five colomns
+  ========================================
+*/
+	
+.span_5_of_5 {
+	width: 100%;
+}
+
+.span_4_of_5 {
+  	width: 79.68%; 
+}
+
+.span_3_of_5 {
+  	width: 59.36%; 
+}
+
+.span_2_of_5 {
+  	width: 39.04%;
+}
+
+.span_1_of_5 {
+  	width: 18.72%;
+}
+
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_5_of_5 {
+		width: 100%; 
+	}
+	.span_4_of_5 {
+		width: 100%; 
+	}
+	.span_3_of_5 {
+		width: 100%; 
+	}
+	.span_2_of_5 {
+		width: 100%; 
+	}
+	.span_1_of_5 {
+		width: 100%; 
+	}
+}
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*
+  ========================================
+  What we do section
+  ========================================
+*/
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*
+  ========================================
+  Grid colomn set up
+  ========================================
+*/
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+.span_1_of_5 img {
+    width: 100%;
 }
